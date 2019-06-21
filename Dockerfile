@@ -5,7 +5,7 @@ ENV UBUNTU_VERSION 18.04
 
 RUN apt-get update && \
     apt-get --yes upgrade && \
-    apt-get install -y curl ca-certificates jq xz-utils && \
+    apt-get install -y curl ca-certificates jq xz-utils python-minimal && \
     rm -rf /var/lib/apt/lists/*
 
 ADD ./app /app
